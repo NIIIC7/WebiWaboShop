@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebiWabo</title>
+        <link rel="icon" href="img/webiwaboo.ico">
+        <link rel="stylesheet" href="/Controller/styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header>
+            <div class="header container">
+                <h1 class="logo">WebiWabo</h1>
+                <nav>
+                    <ul class="menu-nav">
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="#">Hombres</a></li>
+                        <li><a href="#">Mujeres</a></li>
+                        <li><a href="#">Infantil</a></li>
+                        <li><a href="#">Conocenos</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="carrito">
+                    <img src="cart.svg" alt="icono-carro">
+                    <div class="count-products-cart">0</div>
+                </div>
+            </div>
+            <div class="menu-responsive ">
+                <h1 class="logo-responsive">WebiWabo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Qui debitis ducimus, totam quibusdam minus explicabo 
+                    ut deserunt fugiat ipsum quasi!
+                </p>
+                <div class="container-social-responsive">
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>                     
+                    </a>  
+                </div>
+                <nav>
+                    <ul class="menu-nav-responsive">
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="#">Hombres</a></li>
+                        <li><a href="#">Mujeres</a></li>
+                        <li><a href="#">Infatil</a></li>
+                        <li><a href="#">Conocenos</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-close-responsive">
+                    <i class="fa-solid fa-xmark"></i>   
+                </div>
+                </div>
+                <div id="overlay"></div>
+        </header>
+        <main class="container">
+            <div class="grid-images">
+                <div class="imagen-producto imagen-1">
+                    <img src="img/1.jpg" alt="Imagen producto 1">
+                </div>
+                <div class="imagen-producto imagen-2">
+                    <img src="img/2.jpg" alt="Imagen producto 2">
+                </div>
+                <div class="imagen-producto imagen-3">
+                    <img src="img/3.jpg" alt="Imagen producto 3">
+                </div>
+                <div class="imagen-producto imagen-4">
+                    <img src="img/4.jpg" alt="Imagen producto 4">
+                </div>
+            </div>
+            <!-- Detalles de los productos-->
+            <div class="container-details-product">
+                <div class="aside-details-product">
+                    <div class="header-details-product">
+                        <h2>HOODIE SWAG SUCCESS BEIGE</h2>
+                        <div class="row">
+                            <div class="calification">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.9 - <span> 152 reseñas</span></p>
+                            </div>
+                            <div class="share">
+                                <button class="btn">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                    <p>Compartir</p>
+                                </button>
+                                <button class="btn">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                    <p>Guardar</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-details-product">
+                        <div class="container-acordeon">
+                            <button class="acordeon-button active">
+                                Descripción
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="acordeon-content">
+                                <p>
+                                    hoodies son fabricados con 100% aldogón
+                                    french terry
+                                    reactiva para evitar decoloración al lavar y
+                                    estampado tacto cero.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-acordeon">
+                            <button class="acordeon-button active">
+                                Características
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="acordeon-content">
+                                <ul>
+                                    <li>Marca: TUZÉ</li>
+                                    <li>Modelo: SWAG SUCCESS BEIGE</li>
+                                    <li>Material: 100% ALGODÓN FRENCH TERRY
+                                        REACTIVO</li>
+                                    <li>Género: Unisex</li>
+                                    <li>Temporada: Toda temporada</li>
+                                    <li>Style: Urbano</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container-acordeon">
+                            <button class="acordeon-button active">
+                                Como Funciona
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="acordeon-content">
+                                <p>
+                                    La preferencia es un factor muy importante:
+                                    si estás cerca de la parte superior de un
+                                    rango de tallas
+                                    y/o prefieres más cobertura, es posible que
+                                    quieras aumentar la talla.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-acordeon">
+                            <button class="acordeon-button active">
+                                Preguntas Frecuentes
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="acordeon-content">
+                                <ul>
+                                    <li>
+                                        Todos los artículos a precio completo,
+                                        sin usar, con etiquetas adjuntas y
+                                        en su embalaje original son elegibles
+                                        para devolución o cambio dentro
+                                        de los 30 días posteriores a la
+                                        realización de su pedido.
+                                    </li>
+                                    <li>
+                                        Tenga en cuenta que los paquetes deben
+                                        devolverse en su totalidad.
+                                        No aceptamos devoluciones parciales de
+                                        packs.
+                                    </li>
+                                    <li>
+                                        ¿Quieres conocer nuestras políticas de
+                                        devoluciones completas?
+                                        Aquí tienes.
+                                    </li>
+                                    <li>
+                                        ¿Quieres más información sobre envío,
+                                        materiales o
+                                        instrucciones de cuidado? ¡Aquí!
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-details-product">
+                        <div class="info-product">
+                            <h2>Detalles del Producto</h2>
+                            <div class="info">
+                                <p>
+                                    El "Hoodie Swag Success Beige" es la pieza
+                                    definitiva que necesitas para destacar con
+                                    estilo y confianza.
+                                    Este hoodie no es solo una prenda de vestir,
+                                    es una declaración de actitud y éxito.
+                                    Con su diseño moderno y el color beige de
+                                    moda, este hoodie te hará lucir genial sin
+                                    esfuerzo.
+                                </p>
+                                <p>
+                                    No te conformes con lo común; elige el
+                                    "Hoodie Swag Success Beige" y lleva tu
+                                    estilo al siguiente nivel.
+                                    Con su comodidad incomparable y su diseño de
+                                    vanguardia, te recordará que el éxito y la
+                                    moda van de la mano.
+                                    Este hoodie no es solo una prenda, es una
+                                    afirmación de tu actitud triunfadora ante la
+                                    vida.
+                                </p>
+                                <ul>
+                                    <li>Material: 100% algodón de primera
+                                        calidad.</li>
+                                    <li>Suave al tacto y cómodo de llevar
+                                        durante todo el día.</li>
+                                    <li>Diseño moderno con un ajuste relajado y
+                                        elegante.</li>
+                                    <li>Disponible en una amplia gama de
+                                        colores, incluyendo el elegante tono
+                                        beige.</li>
+                                    <li>Capucha ajustable con cordón para mayor
+                                        versatilidad.</li>
+                                    <li>Bolsillo canguro en la parte delantera
+                                        para mantener las manos cálidas o llevar
+                                        objetos pequeños.</li>
+                                    <li>Ideal para cualquier ocasión, ya sea
+                                        para una salida casual o una noche
+                                        fresca.</li>
+                                </ul>
+                            </div>
+                            <div class="features-product">
+                                <div class="feature-product shipping">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    <h4>Envió Gratis</h4>
+                                    <p>Por compras a mayor de S/90.00</p>
+                                </div>
+                                <div class="feature-product return">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <h4>Cambios y Devoluciones</h4>
+                                    <p>Puedes solicitarlo por WhatsApp o
+                                        llamando al (01) 622 444 dentro de 7
+                                        días
+                                        calendario desde la recepción del
+                                        producto. </p>
+                                </div>
+                                <div class="feature-product delivery">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <h4>WebiWabo Delivery</h4>
+                                    <p>Delivery super rapido</p>
+                                </div>
+                                <div class="feature-product refund">
+                                    <i class="fa-solid fa-money-bill-transfer"></i>
+                                    <h4>Devolucion de Dinero</h4>
+                                    <p>30 dias returno por cualquier razón</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-card-payment">
+                    <div class="card-payment">
+                        <div class="header">
+                            <p class="price">S/190.00</p>
+                            <p class="count reviews">
+                                <i class="fa-solid fa-star"></i>
+                                4.9 -
+                                <span>142 reseñas</span>
+                            </p>
+                        </div>
+                        <div class="colors">
+                            <p>Color: <span id="value-color">beige</span></p>
+                            <div class="row-colors">
+                                <div
+                                    class="container-color color-black selected"
+                                    data-color="beige"></div>
+                                <div
+                                    class="container-color color-white "
+                                    data-color="blanco"></div>
+                                <div
+                                    class="container-color color-orange "
+                                    data-color="naranja"></div>
+                                <div class="container-color color-blue "
+                                    data-color="celeste"></div>
+                                <div
+                                    class="container-color color-brown "
+                                    data-color="marrón"></div>
+                            </div>
+                        </div>
+                        <div class="sizes">
+                            <p>Talla: <span id="value-size">XS</span></p>
+                            <div class="container-sizes">
+                                <button class="btn-size selected">XS</button>
+                                <button class="btn-size">S</button>
+                                <button class="btn-size">M</button>
+                                <button class="btn-size">L</button>
+                                <button class="btn-size">XL</button>
+                                <button class="btn-size">2XL</button>
+                                <button class="btn-size">3XL</button>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <div class="container-add-quantity">
+                                <div class="add-quantity">
+                                    <button class="btn-minus" id="btn-decrement">
+                                        <i class="fa-solid fa-minus"></i></button>
+                                    <span id="count-product"> 1 </span>
+                                    <button class="btn-plus" id="btn-increment">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                                <button class="btn-add-to-cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    Añadir al Carrito
+                                </button>
+                            </div>
+                            <div class="info-quantity">
+                                <div class="price-tax">
+                                    <p>S/190.00 x <span id="quantity-product">1</span></p>
+                                    <p>Impuesto estimado</p>
+                                </div>
+                                <div class="value">
+                                    <p>S/190.00</p>
+                                    <p>S/0</p>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="total">
+                            <span>Total</span>
+                            <div class="price-total">S/190.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-reviews">
+                <h2>
+                    <i class="fa-solid fa-star"></i>
+                    4.87 - 142 reseñas
+                </h2>
+                <div class="container-reviews">
+                    <div class="container-review">
+                        <div class="header-review">
+                            <img src="img/user-1.jpg" alt="Usuario 1">
+                            <div class="name-user-review">
+                                <p>Lucas Torres</p>
+                                <span>30 de Julio, 2023</span>
+                            </div>
+                            <div class="stars-review">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>
+                            La "Hoodie Swag Success Beige" es una sudadera con
+                            capucha que realmente vale la pena. Su diseño
+                            moderno y color beige la hacen destacar. La calidad
+                            del material es excelente, y se siente cómoda en la
+                            piel.
+                        </p>
+                    </div>
+                    <div class="container-review">
+                        <div class="header-review">
+                            <img src="img/user-2.jpg" alt="Usuario 2">
+                            <div class="name-user-review">
+                                <p>Carla Linares</p>
+                                <span>15 de Abril, 2023</span>
+                            </div>
+                            <div class="stars-review">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>
+                            Es una prenda increíblemente versátil. El diseño
+                            moderno y el color beige están a la moda, lo que lo
+                            hace perfecto para cualquier ocasión casual. La
+                            comodidad es insuperable gracias al suave tejido de
+                            algodón. La capucha ajustable y el bolsillo canguro
+                            son prácticos y funcionales.
+                        </p>
+                    </div>
+                    <div class="container-review">
+                        <div class="header-review">
+                            <img src="img/user-3.jpg" alt="Usuario 3">
+                            <div class="name-user-review">
+                                <p>María del Carmen</p>
+                                <span>3 de Enero, 2023</span>
+                            </div>
+                            <div class="stars-review">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>
+                            Es mi prenda de vestir favorita para los días en los
+                            que quiero sentirme cómoda y con estilo. El diseño
+                            moderno y el color beige le dan un toque de
+                            elegancia, y el ajuste es perfecto. La suavidad del
+                            tejido de algodón es simplemente increíble.
+                        </p>
+                    </div>
+                    <div class="container-review">
+                        <div class="header-review">
+                            <img src="img/user-4.jpg" alt="Usuario 4">
+                            <div class="name-user-review">
+                                <p>Luisa Pachamac</p>
+                                <span>10 de Enero, 2023</span>
+                            </div>
+                            <div class="stars-review">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>
+                            Es mi prenda de vestir favorita para los días en los
+                            que quiero sentirme cómoda y con estilo. El diseño
+                            moderno y el color beige le dan un toque de
+                            elegancia, y el ajuste es perfecto. La suavidad del
+                            tejido de algodón es simplemente increíble.
+                        </p>
+                    </div>
+                </div>
+                <button class="btn-show-reviews">
+                    Mostrar todas las reseñas
+                </button>
+            </div>
+        </main>
+
+        <section class="container container-productos-relacionados">
+            <h2>Los clientes también compraron</h2>
+            <div class="cards-productos-relacionados">
+                <div class="card-producto-relacionado">
+                    <div class="image-product">
+                        <img src="img/producto-relacionado-1.jpg" alt="Producto Relacionado 1">
+    
+                        <div class="button-group">
+                            <button class="btn-add-to-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Añadir a la cesta
+                            </button>
+                            <button class="btn-quick-view">
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                                Vista previa
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-product">
+                        <div class="container-title">
+                            <h4>Tomatodo Acero Nike 1.5L</h4>
+                            <p>Color-Negro</p>
+                        </div>
+                        <div class="container-price">
+                            <span>S/90.00</span>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                4.5(80 reseñas)
+                            </p>
+                        </div>
+                    </div>
+                    </div><div class="card-producto-relacionado">
+                        <div class="image-product">
+                            <img src="img/producto-relacionado-2.jpg" alt="Producto Relacionado 2">
+        
+                            <div class="button-group">
+                                <button class="btn-add-to-bag">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    Añadir a la cesta
+                                </button>
+                                <button class="btn-quick-view">
+                                    <i class="fa-solid fa-magnifying-glass"></i> 
+                                    Vista previa
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <div class="container-title">
+                                <h4>Gorro de punto fino</h4>
+                                <p>Black</p>
+                            </div>
+                            <div class="container-price">
+                                <span>S/50.00</span>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    4.5(65 reseñas)
+                                </p>
+                            </div>
+                        </div>
+                        </div><div class="card-producto-relacionado">
+                            <div class="image-product">
+                                <img src="img/producto-relacionado-3.jpg" alt="Producto Relacionado 3">
+            
+                                <div class="button-group">
+                                    <button class="btn-add-to-bag">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        Añadir a la cesta
+                                    </button>
+                                    <button class="btn-quick-view">
+                                        <i class="fa-solid fa-magnifying-glass"></i> 
+                                        Vista previa
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="info-product">
+                                <div class="container-title">
+                                    <h4>BOTELLA DE ACERO</h4>
+                                    <p>0.75 LITROS</p>
+                                </div>
+                                <div class="container-price">
+                                    <span>S/70.00</span>
+                                    <p>
+                                        <i class="fa-solid fa-star"></i>
+                                        4.5(90 reseñas)
+                                    </p>
+                                </div>
+                            </div>
+                            </div><div class="card-producto-relacionado">
+                                <div class="image-product">
+                                    <img src="img/producto-relacionado-4.jpg" alt="Producto Relacionado 4">
+                
+                                    <div class="button-group">
+                                        <button class="btn-add-to-bag">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            Añadir a la cesta
+                                        </button>
+                                        <button class="btn-quick-view">
+                                            <i class="fa-solid fa-magnifying-glass"></i> 
+                                            Vista previa
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="info-product">
+                                    <div class="container-title">
+                                        <h4>Polo Oversize</h4>
+                                        <p>Importado</p>
+                                    </div>
+                                    <div class="container-price">
+                                        <span>S/95.00</span>
+                                        <p>
+                                            <i class="fa-solid fa-star"></i>
+                                            4.5(98 reseñas)
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container footer">
+                <h1 class="logo">WebiWabo</h1>
+                <div class="container-social">
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Youtube</span>
+                    </a>
+                    <a href="#" class="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>telegram</span>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>twitter</span>
+                    </a>
+                </div>
+                <div class="user-footer">
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Registrate</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="container-policies">
+                    <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Términos de compra</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="/Controller/index.js"></script>
+    </body>
+
+</html>
