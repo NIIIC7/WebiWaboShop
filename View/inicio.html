@@ -1,116 +1,384 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WebiWabo</title>
-        <link rel="icon" href="img/webiwaboo.ico">
-        <link rel="stylesheet" href="/Controller/styles.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <header>
-            <div class="header container">
-                <h1 class="logo">WebiWabo</h1>
-                <nav>
-                    <ul class="menu-nav">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="producto.html">Hombres</a></li>
-                        <li><a href="#">Mujeres</a></li>
-                        <li><a href="#">Infantil</a></li>
-                        <li><a href="#">Conocenos</a></li>
-                    </ul>
-                </nav>
-                <div class="menu-hamburger">
-                    <i class="fa-solid fa-bars"></i>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebiWabo</title>
+    <link rel="icon" href="img/webiwaboo.ico">
+    <link rel="stylesheet" href="../Controller/css/StyInicio.css">
+    <link rel="stylesheet" href="../Controller/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="header container">
+            <h1 class="logo">WebiWabo</h1>
+            <nav>
+                <ul class="menu-nav">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="#">Hombres</a></li>
+                    <li><a href="#">Mujeres</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Conocenos</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <img src="/View/img/user-regular-24.png" alt="icono-carro">
+                <div class="login-img"></div>
+            </div>
+
+
+            <div class="menu-hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+            <div class="carrito">
+                <img src="cart.svg" alt="icono-carro">
+                <div class="count-products-cart">0</div>
+            </div>
+
+        </div>
+        <div class="menu-responsive ">
+            <h1 class="logo-responsive">WebiWabo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Qui debitis ducimus, totam quibusdam minus explicabo
+                ut deserunt fugiat ipsum quasi!
+            </p>
+            <div class="container-social-responsive">
+                <a href="#" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="telegram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <nav>
+                <ul class="menu-nav-responsive">
+                    <li><a href="producto.html">Mi Cuenta</a></li>
+                    <li><a href="producto.html">Hombres</a></li>
+                    <li><a href="producto.html">Mujeres</a></li>
+                    <li><a href="producto.html">Infantil</a></li>
+                    <li><a
+                            href="https://www.utp.edu.pe/estudiantes?psafe_param=1&gclid=EAIaIQobChMIp9j2hOzzgQMVIUFIAB2WMQs0EAAYASAAEgIrcPD_BwE">Conocenos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-close-responsive">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </header>
+    <section class="banner">
+        <div class="content-banner">
+            <h1>Bienvenido a nuestra tienda online</h1>
+            <p>Descubre las últimas tendencias en moda. <br>Nuevos Estilos</p>
+            <a href="producto.html">Comprar ahora</a>
+        </div>
+        <video autoplay loop muted playsinline id="background-video" class="banner-video">
+            <source src="img/banner.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="category-option">
+        <nav class="category-option-nav">
+            <h1 class="category-option-nav-title">NOVEDADES</h1>
+            <ul class="category-option-nav-ul">
+                <li class="category-option-nav-ul_li"><a href="https://www.google.com">HOMBRE</a></li>
+            </ul>
+
+            <!-- Tarjetas para la categoría Hombre -->
+            <div class="category-option-nav-ul-card">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- Tarjeta 1 Hombre -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 Hombre -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 Hombre -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="menu-responsive ">
-                <h1 class="logo-responsive">WebiWabo</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Qui debitis ducimus, totam quibusdam minus explicabo 
-                    ut deserunt fugiat ipsum quasi!
-                </p>
-                <div class="container-social-responsive">
-                    <a href="#" class="facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#" class="youtube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="#" class="telegram">
-                        <i class="fa-brands fa-telegram"></i>
-                    </a>
-                    <a href="#" class="twitter">
-                        <i class="fa-brands fa-twitter"></i>                     
-                    </a>  
+
+            <ul class="category-option-nav-ul">
+                <li class="category-option-nav-ul_li"><a href="https://www.google.com">MUJER</a></li>
+            </ul>
+
+            <!-- Tarjetas para la categoría Mujer -->
+            <div class="category-option-nav-ul-card">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- Tarjeta 1 Mujer -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 Mujer -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 Mujer -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <nav>
-                    <ul class="menu-nav-responsive">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Hombres</a></li>
-                        <li><a href="#">Mujeres</a></li>
-                        <li><a href="#">Infatil</a></li>
-                        <li><a href="#">Conocenos</a></li>
-                    </ul>
-                </nav>
-                <div class="btn-close-responsive">
-                    <i class="fa-solid fa-xmark"></i>   
-                </div>
-                </div>
-                <div id="overlay"></div>
-        </header>
-        <section class="banner">
-            <div class="content-banner">
-                <h1>Bienvenido a nuestra tienda online</h1>
-                <p>Descubre las últimas tendencias en moda. <br>Nuevos Estilos</p>
-                <a href="producto.html">Comprar ahora</a>
             </div>
-            <video autoplay loop muted playsinline id="background-video" class="banner-video">
-                <source src="img/banner.mp4" type="video/mp4">
+
+            <ul class="category-option-nav-ul">
+                <li class="category-option-nav-ul_li"><a href="https://www.google.com">INFANTIL</a></li>
+            </ul>
+
+            <!-- Tarjetas para la categoría Infantil -->
+            <div class="category-option-nav-ul-card">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- Tarjeta 1 Infantil -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 Infantil -->
+                    <div class="col">
+                        <div class "card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 Infantil -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card_clothes" src="/View/img/hombre/beigeChompa.jpeg"
+                                alt="Imagen del producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">S/. 100.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="details.php?id=1&token=hash_token_aquí"
+                                            class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="addProducto(1, 'hash_token_aquí')">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="ecology">
+        <h1 class="ecology-div-title">SOSTENIBILIDAD</h1>
+
+        <div class="ecology-div">
+            <p class="ecology-div-content">
+                ¡Cambiemos la forma en que vestimos y cuidemos nuestro planeta! En WEBIWABI, promovemos la moda
+                sostenible como un paso hacia un mundo mejor.
+                Descubre nuestro compromiso con la calidad, la ética y la sostenibilidad en cada prenda que ofrecemos.
+                Juntos, podemos marcar la diferencia y abrazar una moda consciente que proteja nuestro preciado planeta.
+                ¡Únete a la revolución de la moda responsable en WEBIWABI y haz una elección ecoamigable!
+            </p>
+            <div class="ecology-div-png">
+                <img src="/View/img/eco_azul.png" alt="">
+                <img src="/View/img/eco_naranja.png" alt="">
+                <img src="/View/img/eco_verde.png" alt="">
+
+            </div>
+        </div>
+        <div class="ecology-video">
+            <video autoplay loop muted playsinline class="ecology-video-mp4">
+                <source src="/View/img/ECO.mp4" type="video/mp4">
             </video>
-        </section>        
-        <footer>
-            <div class="container footer">
-                <h1 class="logo">WebiWabo</h1>
-                <div class="container-social">
-                    <a href="#" class="facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="#" class="youtube">
-                        <i class="fa-brands fa-youtube"></i>
-                        <span>Youtube</span>
-                    </a>
-                    <a href="#" class="telegram">
-                        <i class="fa-brands fa-telegram"></i>
-                        <span>telegram</span>
-                    </a>
-                    <a href="#" class="twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                        <span>twitter</span>
-                    </a>
-                </div>
-                <div class="user-footer">
-                    <ul>
-                        <li><a href="#">Mi cuenta</a></li>
-                        <li><a href="#">Registrate</a></li>
-                        <li><a href="#">Contáctanos</a></li>
-                    </ul>
-                </div>
-                <div class="container-policies">
-                    <ul>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Política de Devoluciones</a></li>
-                        <li><a href="#">Términos de compra</a></li>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                    </ul>
-                </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+    <footer>
+        <div class="container footer">
+            <h1 class="logo">WebiWabo</h1>
+            <div class="container-social">
+
+                <a href="#" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span id="fb">FB</span>
+
+                </a>
+                <a href="#" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span id="In">Youtube</span>
+                </a>
+                <a href="#" class="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span id="Te">telegram</span>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span id="Tx">twitter</span>
+                </a>
             </div>
-        </footer>
-        <script src="/Controller/index.js"></script>
-    </body>
+            <div class="user-footer">
+                <ul>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Registrate</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="container-policies">
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de compra</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/Controller/modificaciones.js"></script>
+    <script src="/Controller/index.js"></script>
+</body>
+
 </html>

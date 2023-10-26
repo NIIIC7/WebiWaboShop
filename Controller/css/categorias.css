@@ -1,0 +1,27 @@
+.category-option, .category-option-nav-ul, .category-option-nav-title, .ecology-div-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-option-nav-ul, .category-option-nav-title, .ecology-div-title {
+  margin: 20px;
+}
+.category-option-nav-ul_li {
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+.category-option-nav-ul_li a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.category-option-nav-ul_li a:hover {
+  color: red;
+}
+.category-option-nav-ul-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=categorias.css.map */

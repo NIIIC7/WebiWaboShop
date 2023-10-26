@@ -1,0 +1,36 @@
+.category-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-nav-ul,
+    &-nav-title {
+        @extend .category-option;
+        margin: 20px;
+    }
+
+    &-nav-ul_li {
+        padding: 10px;
+        list-style: none;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: inherit; // Para mantener el color original
+            cursor: pointer;
+
+            &:hover {
+                color: red; // Cambiar el color en hover si es necesario
+            }
+        }
+    }
+
+    &-nav-ul-card {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.ecology-div-title {
+    @extend .category-option-nav-title;
+}
